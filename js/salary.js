@@ -1,4 +1,5 @@
 function getnhif(amt){
+    //NHIF deductions control flow
     let nhif=0;
     if(amt<=5999){
         nhif=150;}     	  	
@@ -51,8 +52,9 @@ function getnhif(amt){
         nhif=1700;
     }
     return nhif;
-
+//end function
 }
+// get payee deduction
 function payee(amount){
     let pay=0;
     if(amount<=24000){
@@ -67,10 +69,12 @@ function payee(amount){
     return pay;
 }
 function calculateSalary(){
+    //cast value to interger
     let gross=parseInt(document.getElementById("salary").value);
     const nssf=200;
     const taxrelief=2400;
    total=gross-(getnhif(gross)+nssf+payee(gross));
+   //Dom manipulation
    document.getElementById('netsalary').innerHTML="Net Salart Pay is: "+total
 
     
