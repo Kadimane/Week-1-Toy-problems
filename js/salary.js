@@ -61,7 +61,7 @@ function payee(amount){
         pay=(amount*0.1);
     }
     else if(amount<=32333){
-        pay=amount*2.5;
+        pay=amount*.25;
     }
     else{
         pay=amount*0.3;
@@ -73,7 +73,8 @@ function calculateSalary(){
     let gross=parseInt(document.getElementById("salary").value);
     const nssf=200;
     const taxrelief=2400;
-   total=gross-(getnhif(gross)+nssf+payee(gross));
+    let benefit=document.getElementById('benefit').value
+   total=gross+taxrelief+parseInt(benefit)-(getnhif(gross)+nssf+payee(gross));
    //Dom manipulation
    document.getElementById('netsalary').innerHTML="Net Salart Pay is: "+total
 
