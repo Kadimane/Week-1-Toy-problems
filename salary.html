@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <div style="width:100%;">
+        <div class="holder">
+            <div style="font-weight:bold;"><h4>Salary Calculator</h4></div>
+                <p> Enter Gross Salary<br>
+                <input type="number" min="0" name="salary" id="salary" placeholder="salary" style="height:30px;width:300px;">
+                </p>
+            <p><div class="btn"><button style="font-weight:bold;background:green;width:150px;height:30px;" onclick="calculateSalary()">Get Statement</button></div></p>
+            <p id="netsalary" style="font-weight:bold;"></p>
+        </div>
+    </div>
+    </body>
+    <script src="js/salary.js"></script>
+    </html>
