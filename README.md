@@ -22,8 +22,9 @@ Or you can navigate to
 Gloriah Kadimane
 
 ## licence
- This is the license of use for this project
-[a link] https://github.com/Kadimane/Week-1-Toy-problems/LICENSE
+ This is the license of use for this project 
+ 
+[a link](https://github.com/Kadimane/Week-1-Toy-problems/LICENSE)
 
 ## Project Live link
 https://kadimane.github.io/Week-1-Toy-problems/
